@@ -15,19 +15,19 @@ namespace TriangleTests
             File.WriteAllText(outputPath, string.Empty);
             using StreamWriter output = new StreamWriter(outputPath, true);
 
-            int testCounter = 1;
-
             using (var inputFile = new StreamReader("../../../input.txt"))
             {
+                int testCounter = 1;
                 string argsLine;
+
                 while ((argsLine = inputFile.ReadLine()) != null)
                 {
-                    string[] argsArr = argsLine.Split();
+                    string[] testArgs = argsLine.Split();
                     string expectedResult = inputFile.ReadLine();
 
                     var sw = new StringWriter();
                     Console.SetOut(sw);
-                    Program.Main(argsArr);
+                    Program.Main(testArgs);
                     string result = sw.ToString();
 
                     if (result == expectedResult)
