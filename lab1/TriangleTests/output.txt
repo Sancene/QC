@@ -12,3 +12,5 @@ Test 11: success
 Test 12: success
 Test 13: success
 Test 14: success
+Test 15: success
+Test 16: success
