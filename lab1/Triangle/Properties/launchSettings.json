@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Triangle": {
+      "commandName": "Project",
+      "commandLineArgs": "1,7976931348623177E+419 1,7976931348623157E+420 1,7976931348623187E+419"
+    }
+  }
+}

@@ -38,7 +38,14 @@ namespace Triangle
                     double b = double.Parse(args[1]);
                     double c = double.Parse(args[2]);
 
-                    Console.Write(GetTriangleType(a, b, c));
+                    if (a > double.MaxValue || b > double.MaxValue || c > double.MaxValue)
+                    {
+                        Console.Write("Неизвестная ошибка");
+                    }
+                    else
+                    {
+                        Console.Write(GetTriangleType(a, b, c));
+                    }
                 }
                 catch (FormatException)
                 {
