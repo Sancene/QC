@@ -27,6 +27,7 @@ namespace TriangleTests
 
                     var sw = new StringWriter();
                     Console.SetOut(sw);
+                    Console.SetError(sw);
                     Program.Main(testArgs);
                     string result = sw.ToString();
 
