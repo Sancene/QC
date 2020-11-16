@@ -1,4 +1,4 @@
-Font: Times New Roman, Arial, MT Extra, Webdings
+Font: serif, sans-serif, mistral, arial black
 Style: regular, italic, bold, bold italic
 Size: 1, 4000, 16, 11.5 
 Color: red, black, green
