@@ -25,6 +25,6 @@ IF [Subscript] = "yes" THEN [Superscript] = "no";
 IF [Small uppercase] = "yes" THEN [All uppercase] = "no";
 IF [All uppercase] = "yes" THEN [Small uppercase] = "no";
 
-IF [Shift] in {-100, -50, -1} THEN [Superscript] = "yes";
-IF [Shift] in {1, 50, 100} THEN [Subscript] = "yes";
+IF [Shift] in {-100, -50, -1} THEN [Subscript] = "yes";
+IF [Shift] in {1, 50, 100} THEN [Superscript] = "yes";
 IF [Shift] = 0 THEN [Superscript] = "no" AND [Subscript] = "no";
